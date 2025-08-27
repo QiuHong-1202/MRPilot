@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>MRPilot</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,28 +52,33 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">
+              MRPilot: A Mixed-Reality System for Responsive Navigation of General Procedural Tasks</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="" target="_blank">Hongliang Yang</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  Jin Zhou<sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://pengfeixu.com/" target="_blank">Pengfei Xu</a><sup>*,1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://hongbofu.people.ust.hk/" target="_blank">Hongbo Fu</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://vcc.tech/~huihuang" target="_blank">Hui Huang</a><sup>1</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Shenzhen University, <sup>2</sup>HKUST<br>IEEE International Symposium on Mixed and Augmented Reality 2025</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                         <!-- Main PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="static/pdfs/MRPilot.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -84,7 +89,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="static/pdfs/MRPilot-supp.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -94,7 +99,7 @@
                   </span>
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -102,10 +107,10 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -113,7 +118,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -123,22 +128,18 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser image-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      <img src="static/images/teaser.png" alt="MRPilot Overview" style="width: 100%; height: auto;"/>
+      <h2 class="subtitle has-text-justified" style="margin-top: 20px;">
+        <strong>Overview of MRPilot:</strong> In automatic anchoring mode, labels displaying object names will be overlaid on the recognized objects (b). Once the user confirms the anchor, the object anchor is overlaid on the corresponding object (c). The users can also use hand gestures to manually anchor objects that cannot be automatically recognized left in the hand panel (c). MRPilot can automatically detect and track physical objects during the whole task progress (d). It provides users with responsive guidance by monitoring their actions, detecting progress (e), and automatically advancing instructions (f).
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser image -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,7 +149,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          People often need guidance to complete tasks with specific requirements or sophisticated steps, such as preparing a meal or assembling furniture. Traditional guidance often relies on unstructured paper instructions that require people to switch between reading instructions and performing actions, resulting in an unsmooth user experience. Recent Mixed Reality (MR) systems alleviate this problem by giving spatialized navigation but demand an authoring step and, therefore, cannot be easily adapted to general tasks. We propose MRPilot, an MR system empowered by Large Language Models (LLMs) and Computer Vision techniques, offering responsive navigation for general tasks without pre-authoring. MRPilot consists of three modules: a Navigation Builder Module using LLMs to generate structured instructions, an Object Anchor Module exploiting Computer Vision techniques to anchor physical objects with virtual proxies, and an Action Recommendation Module giving responsive navigation according to users’ interactions with physical objects. MRPilot bridges the gap between virtual instructions and physical interactions for general tasks, providing contextual and responsive navigation. We conducted a user study to compare MRPilot with a baseline MR system that also exploited LLMs. The results confirmed the effectiveness of MRPilot.
           </p>
         </div>
       </div>
@@ -164,31 +165,15 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
+        <img src="static/images/method-overview.png" alt="Task preparation of MRPilot"/>
+        <h2 class="subtitle has-text-justified" style="margin-top: 20px;">
+          <strong>Task preparation of MRPilot.</strong> A user starts by providing textual instructions via speech or text, followed by an image capture of the environment. These inputs are processed by the Navigation Builder Module, which identifies task-relevant objects and generates an action transition graph.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
      <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
+      <img src="static/images/method-recommend.png" alt="Action Recommendation Module example"/>
+      <h2 class="subtitle has-text-justified" style="margin-top: 20px;">
+        <strong>A toy example to show how the Action Recommendation Module works.</strong> The user can adaptively select the recommended actions, and the Action Recommendation Module will suggest the following steps according to the user's selection. Two choices result in two different sequences of actions, and both sequences lead to the accomplishment of the task.
       </h2>
     </div>
   </div>
@@ -196,6 +181,37 @@
 </div>
 </section>
 <!-- End image carousel -->
+
+<!-- User Interface Images -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">User Interface</h2>
+      
+      <!-- UI Introduction -->
+      <div class="columns is-centered" style="margin-bottom: 3rem;">
+        <div class="column is-four-fifths">
+          <img src="static/images/method-ui-intro.png" alt="Preparation user interface" style="width: 100%; height: auto;"/>
+          <h2 class="subtitle has-text-justified" style="margin-top: 20px;">
+            <strong>Figure 4: Preparation user interface.</strong> (a) The user provides task instructions via voice or text to initiate task preparation mode. Note that this panel is also used in <em>Baseline</em> system. (b) The user captures the scene for object recognition using the "Capture Your Scene" button. (c) This panel displays the generated instruction draft, where the user can either accept or discard it. (d) The user enters Object Anchoring mode by clicking "Start Tracking", allowing <em>MRPilot</em> to anchor virtual visual cues above physical objects in the environment. After all objects are anchored, the user can click the "Start MRPilot" button to begin task navigation.
+          </h2>
+        </div>
+      </div>
+      
+      <!-- UI Main -->
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <img src="static/images/method-ui-main.png" alt="Task consumption mode user interface" style="width: 100%; height: auto;"/>
+          <h2 class="subtitle has-text-justified" style="margin-top: 20px;">
+            <strong>Figure 5: Task consumption mode user interface.</strong> (a) Guidance overview panel. (b) The task navigation panel shows the current step and recommended steps. (c) Upon selecting a recommended step, other recommended steps will be discarded. (d) Feedback from the LLM displays in <em>Baseline</em>, where users can also regenerate the result using the interface in Figure 4 (a).
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- End User Interface Images -->
 
 
 
@@ -205,10 +221,9 @@
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">Video</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
           <div class="publication-video">
             <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -221,7 +236,7 @@
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
+<!-- Video carousel
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -229,21 +244,21 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+            Your video file here
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+            Your video file here
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
+            Your video file here
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -252,7 +267,7 @@
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+End video carousel -->
 
 
 
@@ -260,7 +275,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,7 +285,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
