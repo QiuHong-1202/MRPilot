@@ -202,9 +202,9 @@
       <!-- UI Introduction -->
       <div class="columns is-centered" style="margin-bottom: 3rem;">
         <div class="column is-four-fifths">
-          <img src="static/images/method-ui-intro.png" alt="Preparation user interface" style="width: 100%; height: auto;"/>
+          <img src="static/images/method-ui-intro.png" alt="Preparation user interface" style="width: 70%; height: auto; display: block; margin: 0 auto;"/>
           <h2 class="subtitle has-text-justified" style="margin-top: 20px;">
-            <strong>Figure 4: Preparation user interface.</strong> (a) The user provides task instructions via voice or text to initiate task preparation mode. Note that this panel is also used in <em>Baseline</em> system. (b) The user captures the scene for object recognition using the "Capture Your Scene" button. (c) This panel displays the generated instruction draft, where the user can either accept or discard it. (d) The user enters Object Anchoring mode by clicking "Start Tracking", allowing <em>MRPilot</em> to anchor virtual visual cues above physical objects in the environment. After all objects are anchored, the user can click the "Start MRPilot" button to begin task navigation.
+            <strong>Preparation user interface.</strong> (a) The user provides task instructions via voice or text to initiate task preparation mode. Note that this panel is also used in <em>Baseline</em> system. (b) The user captures the scene for object recognition using the "Capture Your Scene" button. (c) This panel displays the generated instruction draft, where the user can either accept or discard it. (d) The user enters Object Anchoring mode by clicking "Start Tracking", allowing <em>MRPilot</em> to anchor virtual visual cues above physical objects in the environment. After all objects are anchored, the user can click the "Start MRPilot" button to begin task navigation.
           </h2>
         </div>
       </div>
@@ -212,9 +212,9 @@
       <!-- UI Main -->
       <div class="columns is-centered">
         <div class="column is-four-fifths">
-          <img src="static/images/method-ui-main.png" alt="Task consumption mode user interface" style="width: 100%; height: auto;"/>
+          <img src="static/images/method-ui-main.png" alt="Task consumption mode user interface" style="width: 100%; height: auto; display: block; margin: 0 auto;"/>
           <h2 class="subtitle has-text-justified" style="margin-top: 20px;">
-            <strong>Figure 5: Task consumption mode user interface.</strong> (a) Guidance overview panel. (b) The task navigation panel shows the current step and recommended steps. (c) Upon selecting a recommended step, other recommended steps will be discarded. (d) Feedback from the LLM displays in <em>Baseline</em>, where users can also regenerate the result using the interface in Figure 4 (a).
+            <strong>Task consumption mode user interface.</strong> (a) Guidance overview panel. (b) The task navigation panel shows the current step and recommended steps. (c) Upon selecting a recommended step, other recommended steps will be discarded. (d) Feedback from the LLM displays in <em>Baseline</em>, where users can also regenerate the result using the interface in Figure 4 (a).
           </h2>
         </div>
       </div>
@@ -223,6 +223,37 @@
   </div>
 </section>
 <!-- End User Interface Images -->
+
+<!-- Experiments Section -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Experiments</h2>
+      
+      <!-- Experiment 1 -->
+      <div class="columns is-centered" style="margin-bottom: 3rem;">
+        <div class="column is-four-fifths">
+          <img src="static/images/exp-mix-sus-nasa.png" alt="NASA-TLX and SUS distribution results" style="width: 100%; height: auto;"/>
+          <h2 class="subtitle has-text-justified" style="margin-top: 20px;">
+            <strong>The NASA-TLX (left) and SUS (right) distribution for <em>MRPilot</em> (without hatching) and <em>Baseline</em> (with hatching).</strong> The numbers within each bar segment represent the number of participants who selected the corresponding response option. Statistical significance is indicated above each bar segment (+ : .050 < p < .100, * : p < .050, ** : p < .010, *** : p < .001). A more comprehensive statistical analysis and boxplot figures are provided in the supplemental material.
+          </h2>
+        </div>
+      </div>
+      
+      <!-- Experiment 2 -->
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <img src="static/images/exp-switch.png" alt="Automatic vs Manual Switch Distribution" style="width: 70%; height: auto; display: block; margin: 0 auto;"/>
+          <h2 class="subtitle has-text-justified" style="margin-top: 20px;">
+            <strong>The distribution of automatic and manual switch proportions across individual participants.</strong> Percentages within each bar segment represent the relative frequency of each switch type reported by participants. Tasks completed by each participant using <em>MRPilot</em> are shown in parentheses. Detailed task assignments are provided in the supplemental material.
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- End Experiments Section -->
 
 
 
